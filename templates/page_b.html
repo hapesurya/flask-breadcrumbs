@@ -1,0 +1,10 @@
+<!-- page_b.html -->
+{% extends "base.html" %}
+
+{% block title %}Page B{% endblock %}
+
+{% block content %}
+    <h1>This is Page B</h1>
+    <a href="{{ url_for('page_c') }}">Page C</a>
+    <a href="{{ url_for('back') }}">Back</a>
+{% endblock %}

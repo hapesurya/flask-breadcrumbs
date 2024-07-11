@@ -1,0 +1,12 @@
+<!-- index.html -->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Homepage</h1>
+    <ul>
+        <li><a href="{{ url_for('page_a') }}">Page A</a></li>
+        <li><a href="{{ url_for('page_e') }}">Page E</a></li>
+    </ul>
+{% endblock %}

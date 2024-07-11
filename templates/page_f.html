@@ -1,0 +1,13 @@
+<!-- page_f.html -->
+<!-- page_a.html -->
+{% extends "base.html" %}
+
+{% block title %}Page F{% endblock %}
+
+{% block content %}
+
+    <h1>This is Page F</h1>
+    <a href="{{ url_for('page_c') }}">Page C</a>
+    <a href="{{ url_for('back') }}">Back</a>
+
+{% endblock %}
